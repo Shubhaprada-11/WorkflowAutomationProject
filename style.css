@@ -1,4 +1,9 @@
-  
+ h1{
+      text-align: center;
+ } 
+ *{
+      align-items: center;
+ }
 body {  
   font-family: Calibri, Helvetica, sans-serif;  
   background-color: pink;  
@@ -38,5 +43,21 @@ button {
         background-color: lightblue;  
     }   
 table{
-      margin:30px;
+      margin-left: auto;
+      margin-right: auto;
+      border:3px solid black;
+}
+th,td{
+      margin-left: auto;
+      margin-right: auto;
+      border:1px solid black;
+}
+.deadline-passed{
+      background-color: red;
+}
+.complete{
+      background-color: #4CAF50;
+}
+.in-progress{
+      background-color: yellow;
 }
