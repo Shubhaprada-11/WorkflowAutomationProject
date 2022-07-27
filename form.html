@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Name</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<style>
+    button {
+       position: fixed;
+       left: 45%;
+       width: 10%;
+    }
+</style>
+<body>
+    <h1>P&Pc</h1> 
+    <h3>Jobs assignment form</h3>
+    <table cellspacing="10">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Description</th>
+                <th>Department assigned</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tr>
+            <td><textarea name="description" id="description" style="font-family:sans-serif;font-size:1.0em;">
+                Job_name
+                </textarea><br></td>
+            <td><textarea name="description" id="description" style="font-family:sans-serif;font-size:1.0em;">
+               Description of the job
+                </textarea><br>
+            </td>
+            <td>
+                <input type="radio" id="assignment" name="dept" value="MED">
+                <label for="MED">MED</label><br>
+                <input type="radio" id="assignment" name="dept" value="MCO">
+                <label for="MCO">MCO</label><br>
+                <input type="radio" id="assignment" name="dept" value="PROD GP">
+                <label for="PROD GP">PROD GP</label><br>
+                <input type="radio" id="assignment" name="dept" value="AED">
+                <label for="AED">AED</label><br>
+                <input type="radio" id="assignment" name="dept" value="CED">
+                <label for="CED">CED</label><br>
+                <input type="radio" id="assignment" name="dept" value="FAD">
+                <label for="FAD">FAD</label><br>
+                <input type="radio" id="assignment" name="dept" value="SMD">
+                <label for="SMD">SMD</label><br>
+                <input type="radio" id="assignment" name="dept" value="QCE">
+                <label for="QCE">QCE</label><br>
+                <input type="radio" id="assignment" name="dept" value="R&I">
+                <label for="R&I">R&I</label><br>
+            </td>
+            <td><textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.0em;">
+                Comments
+                </textarea><br>
+            </td>
+        </tr>
+    </table>
+    <div class="button-container-div">
+        <button type="submit">Submit</button><br><br><br>
+        <button type="submit">Submit another form</button>
+    </div>
+    
+    
+</body>
+</html>
