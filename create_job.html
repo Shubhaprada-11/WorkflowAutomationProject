@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin ></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> New Job Details </title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Header() {
+        return (
+          <header>
+            <h1>New Job Details</h1>
+          </header>
+        );
+      }
+      function Form() {
+        return (
+            <form>
+                  <div class="form-group">
+                        <label for="name">Job title</label><br/>
+                        <input type="text" id="name" placeholder="Enter job title" />
+                  </div>
+                  <div class="form-group">
+                        <label for="desc">Description</label> <br/>
+                        <input type="text" class="form-control" id="desc" placeholder="Enter job description" />
+                  </div>
+                  <div>
+                        <input type="checkbox" id="d1" name="d1" />
+                        <label for="d1"> </label> MED <br />
+                        <input type="checkbox" id="d2" name="d2" />
+                        <label for="d2"> </label> MCO <br />
+                        <input type="checkbox" id="d3" name="d3" />
+                        <label for="d3"> </label> PROD GP <br />
+                        <input type="checkbox" id="d4" name="d4" />
+                        <label for="d4"> </label> AED <br />
+                        <input type="checkbox" id="d5" name="d5" />
+                        <label for="d5"> </label> CED <br />
+                        <input type="checkbox" id="d6" name="d6" />
+                        <label for="d6"> </label> FAD <br />
+                        <input type="checkbox" id="d7" name="d7" />
+                        <label for="d7"> </label> SMD <br />
+                        <input type="checkbox" id="d8" name="d8" />
+                        <label for="d8"> </label> QCI <br />
+                        <input type="checkbox" id="d9" name="d9" />
+                        <label for="d9"> </label> R&I <br />
+                  </div>
+
+            </form>
+        );
+      }
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Form />
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <App />,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
